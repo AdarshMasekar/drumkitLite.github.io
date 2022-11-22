@@ -6,11 +6,33 @@ var k = new Audio('./sounds/k.mp3')
 var l = new Audio('./sounds/l.mp3')
 var w = new Audio('./sounds/w.mp3')
 
-var sounds = [a, d, s, j, k, l, w];
 
 
-for (var i = 0; i < sounds.length; i++) {
-    document.querySelectorAll('button')[i].addEventListener('click', function() {
-        sounds[i].play();
-    })
-}
+
+document.querySelectorAll('button')[0].addEventListener('click', function() {
+    a.play();
+})
+
+document.querySelectorAll('button')[1].addEventListener('click', function() {
+    s.play();
+})
+
+document.querySelectorAll('button')[2].addEventListener('click', function() {
+    d.play();
+})
+
+document.querySelectorAll('button')[3].addEventListener('click', function() {
+    j.play();
+})
+
+document.querySelectorAll('button')[4].addEventListener('click', function() {
+    w.play();
+})
+
+document.querySelectorAll('button')[5].addEventListener('click', function() {
+    k.play();
+})
+
+document.querySelectorAll('button')[6].addEventListener('click', function() {
+    l.play();
+})
